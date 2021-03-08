@@ -8,3 +8,7 @@ edition = "2018"
 [dependencies]
 async-std = "1.9.0"
 thiserror = "1.0.24"
+# this crate could serialize and deserialize type who dont have a explicit type at compile time
+erased-serde = "0.3"
+futures = "0.3.13"
+serde = {version = "1.0.123", features = ["derive"]}
